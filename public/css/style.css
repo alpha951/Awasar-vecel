@@ -2,17 +2,35 @@
   font-family: "Baloo Bhaina 2", cursive;
 }
 
+.brand_name {
+  font-size: 70px;
+}
+.large_font {
+  font-size: 20px;
+}
+
+.small_font {
+  font-size: large;
+}
+
+.larger_font {
+  font-size: 40px;
+}
+.login_txt {
+  font-size: 40px;
+}
+
 #landing::before,
 #registerPage::before {
   content: "";
   position: absolute;
-  background: url("../images/v748-toon-103.jpg");
+  background: url("../images/spotlight_happy.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 /* @media screen and (max-width: 768px) {
@@ -134,3 +152,96 @@ a.navbar-brand img {
   color: darkred;
   background-color: rgb(216, 137, 137);
 }
+
+.inp {
+  background-color: #e8f9fd;
+  opacity: 0.7;
+  /* filter: alpha(opacity=60); */
+}
+
+.gsign {
+  background-color: #ffe898;
+  opacity: 0.7;
+  filter: alpha(opacity=60);
+  border-radius: 5px;
+  padding: 10px;
+  /* max-width: 500px; */
+}
+
+.register_gsign {
+  margin-left: 31%;
+  margin-right: 31%;
+}
+
+.register_btn {
+  position: relative;
+  left: 45%;
+  right: 50%;
+  margin-top: 20px;
+  font-size: 25px;
+}
+.gsign a {
+  font-size: large;
+}
+
+.header_area::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/sidebar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.stats_body::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/spotlight.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.all_jobs_body::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/employees.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.add_jobs_body::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/spotlight_happy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.profile_body::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/payroll.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* Register page styling */

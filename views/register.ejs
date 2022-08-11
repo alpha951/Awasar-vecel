@@ -42,6 +42,7 @@
         <div class="col-auto">
           <div
             class="container border rounded-2 border-dark pt-4 pb-3 register"
+            style="background-color: transparent"
           >
             <div class="text-center">
               <a class="navbar-brand" href="/">
@@ -50,10 +51,10 @@
                   alt=""
                   class="align-text-center mb-1"
                 />
-                Jobly
+                Awasar
               </a>
             </div>
-            <h4 class="ms-3 mt-4">Register</h4>
+            <h2 class="ms-3 mt-4" style="text-align: center">Register</h2>
             <form
               action="/register"
               method="post"
@@ -66,7 +67,7 @@
                   </div>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control inp large_font"
                     name="name"
                     id="name"
                     placeholder="Enter Your Name"
@@ -81,7 +82,7 @@
                   </div>
                   <input
                     type="tel"
-                    class="form-control"
+                    class="form-control inp large_font"
                     name="number"
                     id="number"
                     placeholder="Enter Your Mobile Number"
@@ -94,7 +95,7 @@
                   <div class="input-group-text">@</div>
                   <input
                     type="email"
-                    class="form-control"
+                    class="form-control large_font inp"
                     name="username"
                     id="username"
                     placeholder="Enter Your Email"
@@ -110,7 +111,7 @@
                   </div>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control inp large_font"
                     name="location"
                     id="location"
                     placeholder="Enter Your Location"
@@ -119,22 +120,28 @@
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
+                   <div class="input-group">
+                <div class="input-group-text">
+                  <i class="fa-solid fa-key">🗝️</i>
+                </div>
                 <input
                   type="password"
-                  class="form-control"
+                  class="form-control inp large_font"
                   name="password"
                   id="password"
                   placeholder="Enter Your Password"
                   autocomplete="off"
                   required
                 />
+                </div>
               </div>
+              </form>
               <div class="col-12">
-                <button type="submit" class="btn btn-success">Register</button>
+                <button type="submit" class="btn btn-success register_btn" >Register</button>
               </div>
             </form>
             <hr class="ms-3" />
-            <div class="text-center">
+            <div class="text-center gsign register_gsign">
               <a href="/auth/google" class="google text-danger">
                 <i class="bi bi-google"></i>
                 Sign Up with Google

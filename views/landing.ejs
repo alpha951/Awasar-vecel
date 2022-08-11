@@ -32,31 +32,37 @@
 
         <div class="row justify-content-center align-items-center content">
             <div class="col-lg-4 text-center">
-                <h4>Do you miss your OAs?</h4>
-                <h4>Forget to prepare for Interview?</h4>
-                <h4>Not Anymore.</h4>
-                <a class="navbar-brand" href="/">
+                <h4 class="larger_font">Do you miss your OAs?</h4>
+                <h4 class="larger_font">Forget to prepare for Interview?</h4>
+                <h4 class="larger_font">Not Anymore.</h4>
+                <a class="navbar-brand brand_name" href="/">
                 <img src="../images/android-chrome-192x192.png" alt="" class="align-text-center mb-1">
-                Awasar
+                <span class="brand_name">Awasar</span>
                 </a>
             </div>
             <div class="col-lg-4">
-                <div class="container border rounded-2 border-dark py-4 login">
-                <h4 class="text-center mb-3">Login</h4>
+                <!-- style="background-color: #607EAA; opacity: 0.8; filter: alpha(opacity=60);"> -->
+                <!-- <div class="container border rounded-2 border-dark py-4 login"  -->
+                <h4 class="text-center mb-3 login_txt">Hi there!</h4>
                 <form action="/login" method="post">
                 <div class="form-group">
-                    <input type="email" class="form-control my-2 mx-auto" name="username" placeholder="Email" required>
+                    <input type="email" class="large_font form-control my-2 mx-auto inp" name="username" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control my-2 mx-auto" name="password" placeholder="Password" required>
+                    <input type="password" class="large_font form-control my-2 mx-auto inp" name="password" placeholder="Password" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
-                <button class="btn btn-success"><a href="/register" class="register text-light">Register</a></button> <hr>
+                <button type="submit" class="btn btn-primary signIn large_font">Login</button>
                 <div class="text-center">
-                <a href="/auth/google" class="google mx-2 text-danger">
+                    <hr/>
+                    <h5 class="small_font">Don't have an account?</h5>
+                <button class="btn btn-success signIn large_font"><a href="/register" class="register text-light">Register</a></button> <hr>
+                <h5>Or</h5>
+                <div class="gsign">
+                <a href="/auth/google" class="google mx-2 text-danger large_font">
                     <i class="bi bi-google"></i>
                     Sign In with Google
                 </a>
+                </div>
                 </div>
             </div>
             </div>
