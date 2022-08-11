@@ -118,8 +118,8 @@ app.get(
 );
 
 app.get('/logout', (req, res) => {
-    req.logout();
-    res.redirect('/');
+    req.logout;
+    req.session.destroy((err) => res.redirect('/'));
 });
 
 app.get('/stats', (req, res) => {
