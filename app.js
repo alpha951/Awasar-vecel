@@ -99,7 +99,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/register", (req, res) => {
-    req.logout();
+    req.logout;
     res.render("register");
 })
 
