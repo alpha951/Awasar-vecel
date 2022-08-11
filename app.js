@@ -57,7 +57,7 @@ passport.use(
         {
             clientID: process.env.CLIENT_ID,
             clientSecret: process.env.CLIENT_SECRET,
-            callbackURL: 'https://awasar.herokuapp.com//auth/google/jobly',
+            callbackURL: 'https://awasar.herokuapp.com/auth/google/jobly',
             userProfileURL: 'https://www.googleapis.com/oauth2/v3/userinfo',
         },
         function (accessToken, refreshToken, profile, cb) {

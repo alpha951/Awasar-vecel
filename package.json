@@ -1,12 +1,11 @@
-{"name": "Awasar",
+{
+  "name": "awasar",
   "author": "Keshav",
   "description": "A Job-tracker",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
-    "start": "node app"
+    "start": "node app.js"
   },
-
   "dependencies": {
     "body-parser": "^1.20.0",
     "dotenv": "^16.0.1",
@@ -21,6 +20,6 @@
     "passport-local-mongoose": "^7.1.2"
   },
   "engines": {
-      "node": "18.7.0"
+    "node": "18.7.0"
   }
 }
