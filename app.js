@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path');
 const express = require('express');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
@@ -15,7 +16,7 @@ const User = require('./models/User');
 
 const app = express();
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(session({
@@ -32,6 +33,8 @@ mongoose.connect(process.env.DBURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
+// mongoose.connect('mongodb://127.0.0.1:27017/awasarDB');
+
 
 let db = mongoose.connection;
 
@@ -58,6 +61,7 @@ passport.use(
             clientID: process.env.CLIENT_ID,
             clientSecret: process.env.CLIENT_SECRET,
             callbackURL: 'https://awasar.herokuapp.com/auth/google/jobly',
+            // callbackURL: 'http://localhost:3000/auth/google/jobly',
             userProfileURL: 'https://www.googleapis.com/oauth2/v3/userinfo',
         },
         function (accessToken, refreshToken, profile, cb) {
