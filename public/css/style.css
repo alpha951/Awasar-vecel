@@ -1,0 +1,136 @@
+* {
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+#landing::before,
+#registerPage::before {
+  content: "";
+  position: absolute;
+  background: url("../images/v748-toon-103.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* @media screen and (max-width: 768px) {
+    #landing::before{
+    content: "";
+    position: absolute;
+    background: url('../images/Modern\ Talent\ Search\ Composition\ Illustration.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+} */
+
+#landing .content,
+#registerPage .content {
+  height: 100vh;
+  margin: 0;
+}
+
+#landing .login,
+#registerPage .register {
+  background-color: #fff;
+}
+
+#landing a.register,
+#landing a.google,
+#registerPage a.google {
+  text-decoration: none;
+}
+
+a.navbar-brand {
+  font-size: 3em;
+  font-weight: 800;
+  color: #40bf40;
+}
+
+a.navbar-brand:hover {
+  color: #40bf40;
+}
+
+a.navbar-brand img {
+  width: 1.5em;
+}
+
+.menu {
+  font-size: 2.5em;
+}
+
+.logout {
+  font-size: 1.5em;
+}
+
+.sidebar-list {
+  list-style: none;
+}
+
+.sidebar-item a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+
+.bl-3 {
+  border-left: 0.5em solid #dfdfdf !important;
+}
+
+#add-job,
+#profile,
+#all-jobs,
+#edit-job {
+  background-color: #f0f4f8;
+}
+
+#all-jobs .delete a,
+#all-jobs .edit a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.job-card {
+  background-color: #fff;
+  margin: 1em;
+}
+
+.company-logo {
+  background-color: #40bf40;
+  position: relative;
+  font-size: 2.5em;
+  width: 1.5em;
+  height: 1.5em;
+  color: white;
+  border-radius: 5%;
+}
+
+.job-card .Pending {
+  color: darkgoldenrod;
+  background-color: rgb(243, 212, 134);
+}
+
+.job-card .Online-Assessment {
+  color: gray;
+  background-color: rgb(219, 219, 219);
+}
+
+.job-card .Interview {
+  color: darkblue;
+  background-color: rgb(137, 137, 216);
+}
+
+.job-card .Offered {
+  color: darkgreen;
+  background-color: rgb(137, 216, 137);
+}
+
+.job-card .Declined {
+  color: darkred;
+  background-color: rgb(216, 137, 137);
+}
