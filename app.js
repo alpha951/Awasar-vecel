@@ -13,11 +13,13 @@ const findOrCreate = require('mongoose-findorcreate');
 const bodyParser = require('body-parser');
 const Job = require('./models/Job');
 const User = require('./models/User');
-
+const compression = require('compression');
 const app = express();
 app.set('view engine', 'ejs');
+app.use(compression()); //use compression 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
+
 
 app.use(session({
     secret: process.env.SECRET,
