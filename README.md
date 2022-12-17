@@ -18,10 +18,10 @@ Navigate to the project directory: cd Awasar-vecel
 Install the dependencies: npm install
 Create a .env file in the root of the project and set the following variables:
 <ul>
-<li> CLIENT_ID: google auth client id </li>
-CLIENT_SECRET: google auth secret
-SECRET: the password for your database
-MONGODB_URI: mongodb cloud uri
+  <li> CLIENT_ID: google auth client id </li>
+  <li> CLIENT_SECRET: google auth secret </li>
+  <li> SECRET: the password for your database </li>
+  <li> MONGODB_URI: mongodb cloud uri </li>
 </ul>
 Run the database migration script to set up the necessary tables: npm run migrate
 Start the server: npm start
