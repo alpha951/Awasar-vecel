@@ -20,7 +20,7 @@ const usersSchema = new mongoose.Schema({
             date: String,
         },
     ],
-});
+},{ timestamps: true });
 
 usersSchema.plugin(passportLocalMongoose);
 usersSchema.plugin(findOrCreate);
